@@ -1,145 +1,62 @@
-# HTML
+# 🎮🤖 NLW Agents - Assistente de Meta com IA para Games
 
-- HyperText
-  - Texto puros, livros, revistas, jornais
-  - Links: acessar outros documentos
-  - Imagens, vídeos, áudios
-- Markup
-  - Marcação 
-  - Tags: <a> Link </a>
-  - Atributos: <a href="https://rocketseat.com.br">
-  - Globais: id, class, ...
-- Language    
-  - Linguagem 
-  - Sintaxe: maneira de escrever
+## ✨ Visão Geral do Projeto
 
-# HTTP
+Este projeto desenvolve um **assistente virtual interativo** projetado especificamente para gamers. Ele utiliza o poder da **Inteligência Artificial (IA) do Google Gemini** para fornecer dicas, estratégias e builds personalizadas para diversos jogos, tudo através de uma interface web intuitiva.
 
-  - HyperText 
-  - Transfer
-    - Transferência
-  - Protocol
-    - Protocolo
-    - Conjunto de regras
-  - Methods HTTP (verbos): Get, Post, Patch/Put, Delete
-  - Headers (cabeçalhos): Instruções/Informações extras para cada chamada  
+## 🚀 Funcionalidades
 
-# URL
+* **Formulário Interativo:** Permite ao usuário informar sua chave de API e fazer perguntas específicas sobre jogos e estratégias.
+* **Integração com IA:** Conecta-se à Google Gemini API para processar as perguntas e gerar respostas inteligentes.
+* **Conversão de Markdown:** As respostas da IA, que vêm em formato Markdown, são convertidas para HTML para uma visualização formatada e agradável (com negritos, listas, etc.).
+* **Feedback Visual:** O botão de "Perguntar" oferece feedback visual (alterando texto e estado) durante o processamento da requisição.
+* **Validação Básica:** Garante que os campos necessários sejam preenchidos antes de enviar a pergunta.
 
-- Uniform
-  - Uniforme
-- Resource
-  - Recurso 
-- Locator 
-  - Localizador     
-  Encontrar um recurso (html, css, js, pdf, png, jpg, mp4, mp3 ...)
-  Endereço
+## 🛠️ Tecnologias Utilizadas
 
-  # IP
+* **Front-end:**
+    * `HTML5`: Estruturação da página e do formulário de interação.
+    * `CSS3`: Estilização visual, incluindo responsividade e efeitos de interface.
+    * `JavaScript`: Lógica principal da aplicação, manipulação do DOM e controle de eventos.
+* **Integração com IA:**
+    * `Google Gemini API (modelo Gemini 2.5 Flash)`: Para processamento de linguagem natural e geração das respostas da IA.
+* **Bibliotecas Externas:**
+    * `Showdown.js`: Biblioteca JavaScript para converter texto formatado em Markdown para HTML.
 
-    - Internet
-      - Rede mundial de computadores
-    - Protocol
-      - Conjunto de regras
-    Endereço do computador
-    rocketseat.com.br (domínio)
-    123.32.1.23 (ip)    
+## ⚙️ Como Usar / Rodar Localmente
 
-  # DNS
+Siga estes passos para configurar e rodar o projeto em sua máquina local:
 
-   - Domain 
-     - Domínio
-   - Name
-     - Nome
-   - Server
-     - Servidor      
+1.  **Clone o Repositório:**
+    ```bash
+    git clone [https://github.com/Necilia/nlw-game-agents-ai.git](https://github.com/Necilia/nlw-game-agents-ai.git)
+    ```
+    Navegue até a pasta do projeto:
+    ```bash
+    cd nlw-game-agents-ai # Ex: cd nlw-game-agents-ai
+    ```
 
-  # CSS
+2.  **Obtenha sua Chave de API do Google Gemini:**
+    * Acesse o [Google AI Studio](https://aistudio.google.com/app/apikey) e crie uma nova chave de API para o Gemini.
 
-  - Cascading
-    - Cascata
-    - Regras das escritas
-    - Hierarquia
-  - Style
-    - Estilo
-  - Sheet
-   - Folha
-   - seletor
-   - propriedade e valor
+3.  **Insira a Chave de API na Aplicação:**
+    * Abra o arquivo `index.html` ou simplesmente carregue o projeto no seu navegador (ex: usando a extensão Live Server do VS Code).
+    * No campo "Informa a API Key do Gemini" na interface, **cole a sua chave de API**.
 
-   De um arquivo que terá na sua sintaxe, declarações, propriedades e valores.
-    A partir disso, o HTML é impactado visualmente.
-  
-  # JS
+4.  **Faça Suas Perguntas:**
+    * Selecione um jogo e digite sua pergunta sobre builds, estratégias ou dicas.
+    * Clique em "PERGUNTAR" e aguarde a resposta da IA!
 
-  - Linguagem de programação 
-  - Browsers
-  - Input -> Process -> Output
-  - Variáveis
-  - Function
-    - Agrupamento e reuso de código
-    - Sequência lógica
-    - Saída
-  - Gemini (IA): esperar uma resposta  
-  - Mexer no meu navegador  
-  - Estrutura de dados 
-  - Estrutura de decisão
-  - Algoritmo: sequência de passos lógica, de maneira ordenada, a fim de chegar a alguma conclusão (limitada)
-  - Lógica (Pensamento computacional)
-    - Abstração
-    - Decomposição
-    - Algoritmo
-    - Reconhecimento de padrão
-  - Tipos de dados 
-    - Number (números)
-    - String (textos) (" ", ' ', ` `)  
-    - Boolean: true | false
+## 🧠 Aprendizados e Desafios
 
-  # DOM 
-   - Document
-   - Object
-   - Model
+Neste projeto, tive a oportunidade de aprender e aplicar conceitos essenciais em:
 
-  # API 
+* **Comunicação com IA:** Integrei a API do Google Gemini para o site "conversar" com a inteligência artificial e obter respostas dinâmicas.
+* **Construção da Interface:** Desenvolvi a estrutura (HTML) e o visual (CSS) do site, garantindo uma experiência de usuário intuitiva.
+* **Interatividade (JavaScript):** Tornei o site dinâmico, fazendo-o reagir às ações do usuário e exibir as informações da IA, superando desafios iniciais em lógica JavaScript.
+* **Manejo de Dados e Erros:** Aprendi a lidar com os dados recebidos da IA e a gerenciar possíveis falhas na comunicação.
+* **Uso de Ferramentas:** Explorei a utilização de bibliotecas externas para otimizar o desenvolvimento e a apresentação do conteúdo.
 
-   - Application
-   - Programing 
-   - Interface
-   - JSON: JavaScript Object Notation
+## 📄 Licença
 
-  # CDN
-   
-   - Content
-   - Delivery
-   - Network
-
-  # LLM
-
-    - Large
-    - Language
-    - Model 
-    - Gemini, OpenAI (chatGPT), Anthropic (Claude) ...
-
-  # Agentes AI
-
-   - Tools (ferramentas): permitem uso de código, ou apps, ou qualquer informação extra.
-   - Melhor contexto 
-
-   # Engenharia de prompt
-
-    - One shot: uma única pergunta sem muito contexto
-    - Few shot: é apresentado exemplos do que se espera
-    - Chain of Thought: Cadeia de pensamento   para a IA responder gradativamente conforme a instrução.
-
-
-
-
-
-
-
-
-
-
-
-
-
+Este projeto está licenciado sob a Licença MIT.
