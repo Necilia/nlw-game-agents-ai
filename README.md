@@ -1,5 +1,7 @@
 # 🎮🤖 NLW Agents - Assistente de Meta com IA para Games
 
+![Screenshot do Projeto](./images/projeto-assistente-ia.png)
+
 ## ✨ Visão Geral do Projeto
 
 Este projeto desenvolve um **assistente virtual interativo** projetado especificamente para gamers. Ele utiliza o poder da **Inteligência Artificial (IA) do Google Gemini** para fornecer dicas, estratégias e builds personalizadas para diversos jogos, tudo através de uma interface web intuitiva.
